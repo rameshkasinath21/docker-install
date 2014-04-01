@@ -17,8 +17,8 @@ printf   "\n"
 
 case $rhel in
 
-        1) wget http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm && wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm && sudo rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm;;
-        2) wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm && wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm;;
+        1) wget http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm && wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm && sudo rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm && rm -rf remi-release-5*.rpm epel-release-5*.rpm;;
+        2) wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm && wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm && rm -rf remi-release-6*.rpm epel-release-6*.rpm;;
 
 esac
 
