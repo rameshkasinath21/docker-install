@@ -44,6 +44,6 @@ case $boot in
 
 esac
 
-ehco -e "Please check out http://docs.docker.io/en/latest/ for documentation on this application.\n"
+echo -e "Please check out http://docs.docker.io/en/latest/ for documentation on this application.\n"
 
 sudo docker run -i -t fedora /bin/bash
