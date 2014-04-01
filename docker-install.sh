@@ -1,7 +1,9 @@
 #!/bin/bash
 #
-# Simple install script for docker on RHEL based distros
-
+# Script: docker-install
+# Purpose: Simple install script for docker on RHEL based distros
+# Author: Alan-Michael Barnes
+#
 # Install the epel repo, just in case it is not already installed.
 
 echo "What version of RHEL are you currently running?"
